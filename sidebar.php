@@ -50,5 +50,7 @@
 			</a>
 		</div>
 	</div>
+
+	<?php dynamic_sidebar('Sidebar Right'); ?>
 </aside>
 <!-- End Sidebar -->
