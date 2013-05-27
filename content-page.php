@@ -13,7 +13,7 @@
 <article id="page-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
 	<header>
-		<h2><?php the_title(); ?></h2>
+		<h2 class="text-right"><?php the_title(); ?></h2>
 	</header>
 
 	<?php if ( has_post_thumbnail()) : ?>

@@ -73,6 +73,8 @@ function foundation_assets() {
 		// Load JavaScripts
 		wp_enqueue_script( 'foundation', get_template_directory_uri() . '/js/foundation.min.js', null, '4.0', true );
 		wp_enqueue_script( 'modernizr', get_template_directory_uri().'/js/vendor/custom.modernizr.js', null, '2.1.0');
+		wp_enqueue_script( 'jquery', get_template_directory_uri().'/js/vendor/jquery.js', null, '1.9.1');
+		wp_enqueue_script( 'lettering', get_template_directory_uri().'/js/vendor/jquery.lettering.min.js', null, '0.6.1');
 		if ( is_singular() ) wp_enqueue_script( "comment-reply" );
 
 		// Load Stylesheets
@@ -111,9 +113,10 @@ endif;
  * @see: http://foundation.zurb.com/docs/javascript.html
  */
 
-if ( ! function_exists( 'foundation_comptability' ) ) :
+/*
+if ( ! function_exists( 'foundation_compatibility' ) ) :
 
-function foundation_comptability () {
+function foundation_compatibility () {
 
 echo "<script>";
 echo "document.write('<script src=' +";
@@ -123,9 +126,10 @@ echo "</script>";
 
 }
 
-add_action('wp_footer', 'foundation_comptability', 10);
+add_action('wp_footer', 'foundation_compatibility', 10);
 
 endif;
+*/
 
 /**
  * Register Navigation Menus

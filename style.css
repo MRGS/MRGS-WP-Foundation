@@ -13,6 +13,32 @@ Tags: two-columns
 
 /* Artfully masterminded by ZURB  */
 
+
+/* @license
+ * MyFonts Webfont Build ID 2565275, 2013-05-26T21:21:29-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Code Pro Demo by Fontfabric
+ * URL: http://www.myfonts.com/fonts/font-fabric/code-pro/demo/
+ * Copyright: Copyright (c) 2010 by Svetoslav Simov. All rights reserved.
+ * Licensed pageviews: Unlimited
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2565275
+ * 
+ * © 2013 MyFonts Inc
+*/
+
+@font-face {font-family: 'Code Pro'; src: url('font/CodePro_0.eot'); src: url('font/CodePro_0.eot?#iefix') format('embedded-opentype'),url('font/CodePro_0.woff') format('woff'),url('font/CodePro_0.ttf') format('truetype'),url('font/CodePro_0.svg#wf') format('svg');}
+
+
+
+
 /* -------------------------------------------------- 
    Table of Contents
 -----------------------------------------------------
@@ -61,8 +87,9 @@ article .th {margin-bottom:10px; margin-bottom:1em;}
    Typography
 ----------------------------------------- */
 
-body,h1,h2,h3,h4,h5,h6,p {font-family: 'Open Sans', sans-serif;}
-h1,h2,h3,h4,h5,h6,a:link {font-weight:300;}
+h1,h2,h3 {font-family: 'Code Pro', sans-serif;}
+body,h4,h5,h6,p {font-family: 'Open Sans', sans-serif;}
+/*h1,h2,h3,h4,h5,h6,a:link {font-weight:300;}*/
 
 .site-title .subheader {margin-bottom:0;}
 
@@ -70,7 +97,7 @@ h1,h2,h3,h4,h5,h6,a:link {font-weight:300;}
    Header
 ----------------------------------------- */
 
-.site-header {padding:1.5rem 0 1rem 0;margin:-1.875em 0 1.875em 0;}
+.site-header { padding:1.5rem 0 1rem 0;margin:0 0 2.875em 0; }
 .sidebar ul li {list-style:none;}
 .top-bar-section ul li>a {border-left:1px solid #333;border-right:none;}
 
@@ -107,3 +134,47 @@ object {
 /* -----------------------------------------
    Extra
 ----------------------------------------- */
+a {
+  font-weight:bold;
+  color: #424242;
+}
+
+a:hover,a:focus {
+  color: #525252;
+}
+
+.posttitle a {
+  color: #000;
+}
+.posttitle a:hover, a:focus {
+  color: #000;
+}
+
+.headertext {
+  /*font-family: 'Code Pro', sans-serif;*/
+  color:#000;
+  font-size: 8.3em;
+}
+
+.headerimg {
+  min-width: 100%;
+}
+
+.datestamp {
+  font-weight: 300;
+  margin-bottom: 0em;
+}
+
+#headerline1 {
+  margin-top: -0.05em;
+  margin-bottom: 0em;
+  line-height: 1em;
+  letter-spacing: -0.03em;
+}
+
+#headerline2 {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  line-height: 0.8em;
+  letter-spacing: -0.03em;
+}

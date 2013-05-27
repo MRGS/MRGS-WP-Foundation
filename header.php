@@ -25,8 +25,15 @@
 
 <title><?php wp_title(); ?></title>
 
+<!-- Load jquery and lettering in the head to avoid FOUT -->
 <?php wp_head(); ?>
 
+<!-- Lettering for header -->
+<script>
+  $(document).ready(function() {
+    //$("#header-title").lettering();
+  });
+</script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -44,11 +51,17 @@
 
 	<header class="site-header">
 		<div class="row">
-			<div class="large-9 columns">
-				<h1 class="right"><a style="color:#<?php header_textcolor(); ?>;" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<div class="large-8 columns">
+				<?php /*
+				<a style="color:#<?php header_textcolor(); ?>;" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><h1 class="right" id="header-title"><?php bloginfo( 'name' ); ?></h1></a>
+				*/ ?>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+					<h1 class="text-right headertext" id="headerline1">MRGS</h1>
+					<h1 class="text-right headertext" id="headerline2">SLMR</h1>
+				</a>
 			</div>
-			<div class="large-3 columns">
-				<a style="color:#<?php header_textcolor(); ?>;" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+			<div class="large-3 large-offset-1 columns">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<img src="<?php echo get_stylesheet_directory_uri().'/img/mergsey.png'; ?>" alt="MRGS/SLMR">
 				</a>
 			</div>

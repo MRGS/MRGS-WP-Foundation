@@ -14,9 +14,9 @@
 
 	<header>
 		<hgroup>
-			<h3><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'foundation' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
+			<h6 class="text-right datestamp"><?php the_time(get_option('date_format')); ?></h6>
+			<h2 class="text-right posttitle"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'foundation' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 			<?php if ( is_sticky() ) : ?><span class="right radius secondary label"><?php _e( 'Sticky', 'foundation' ); ?></span><?php endif; ?>
-			<h6>Written by <?php the_author_link(); ?> on <?php the_time(get_option('date_format')); ?></h6>
 		</hgroup>
 	</header>
 
@@ -24,7 +24,7 @@
 		<a href="<?php the_permalink(); ?>" class="th" title="<?php the_title_attribute(); ?>" ><?php the_post_thumbnail(); ?></a>
 	<?php endif; ?>
 
-	<?php the_excerpt(); ?>
+	<?php the_content(); ?>
 	
 	<hr>
 
