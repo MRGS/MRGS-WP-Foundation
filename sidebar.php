@@ -11,14 +11,44 @@
 ?>
 
 <!-- Sidebar -->
-<aside class="large-3 large-offset-1 columns sidebar">
-
-<?php if ( dynamic_sidebar('Sidebar Right') ) : elseif( current_user_can( 'edit_theme_options' ) ) : ?>
-
-	<h5><?php _e( 'No widgets found.', 'foundaton' ); ?></h5>
-	<p><?php printf( __( 'It seems you don\'t have any widgets in your sidebar! Would you like to %s now?', 'foundation' ), '<a href=" '. get_admin_url( '', 'widgets.php' ) .' ">populate your sidebar</a>' ); ?></p>
-
-<?php endif; ?>
-
+<aside class="large-3 columns sidebar">
+	<div class="row socialicons">
+		<div class="large-6 columns socialicon1">
+			<a href="https://www.facebook.com/groups/135987799795381/" title="Facebook">
+				<img src="<?php echo get_stylesheet_directory_uri().'/img/icon-fb.png'; ?>" alt="Facebook Group">
+			</a>
+		</div>
+		<div class="large-6 columns socialicon2">
+			<a href="https://www.twitter.com/societeludique" title="Twitter">
+				<img src="<?php echo get_stylesheet_directory_uri().'/img/icon-tw.png'; ?>" alt="Twitter">
+			</a>
+		</div>
+	</div>
+	<div class="row socialicons">
+		<!-- <div class="large-12 columns"> -->
+			<a href="http://mrgs.ca/forum" title="Forums">
+				<img src="<?php echo get_stylesheet_directory_uri().'/img/icon-forums.png'; ?>" alt="Forums">
+			</a>
+		<!-- </div> -->
+	</div>
+	<div class="row socialicons">
+		<!-- <div class="large-12 columns"> -->
+			<a href="http://mrgs.ca/arcaderoyale" title="Arcade Royale">
+				<img src="<?php echo get_stylesheet_directory_uri().'/img/icon-arcade.png'; ?>" alt="Arcade Royale">
+			</a>
+		<!-- </div> -->
+	</div>
+	<div class="row socialicons">
+		<div class="large-6 columns socialicon1">
+			<a href="#" title="Flickr">
+				<img src="<?php echo get_stylesheet_directory_uri().'/img/icon-flickr.png'; ?>" alt="Flickr">
+			</a>
+		</div>
+		<div class="large-6 columns socialicon2">
+			<a href="http://vimeo.com/societeludique" title="Vimeo">
+				<img src="<?php echo get_stylesheet_directory_uri().'/img/icon-vimeo.png'; ?>" alt="Vimeo">
+			</a>
+		</div>
+	</div>
 </aside>
 <!-- End Sidebar -->

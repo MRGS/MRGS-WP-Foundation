@@ -154,11 +154,15 @@ a:hover,a:focus {
   /*font-family: 'Code Pro', sans-serif;*/
   color:#000;
   font-size: 8.3em;
+  display: block;
+  width: 100%;
 }
 
-.headerimg {
-  min-width: 100%;
+
+@media screen and (min-width: 768px) {
+  .sidebar, .headerimg { width: 250px !important; }
 }
+
 
 .datestamp {
   font-weight: 300;
@@ -177,4 +181,20 @@ a:hover,a:focus {
   margin-bottom: 0em;
   line-height: 0.8em;
   letter-spacing: -0.03em;
+}
+
+.row .socialicons {
+  margin-right: 0em;
+  margin-left: 0em;
+  margin-bottom: 0.7em;
+}
+
+.columns .socialicon1 {
+  padding-left: 0;
+  padding-right: 0.6em;
+}
+
+.columns .socialicon2 {
+  padding-left: 0.6em;
+  padding-right: 0;
 }
