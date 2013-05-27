@@ -11,7 +11,7 @@
 ?>
 
 <!-- Sidebar -->
-<aside class="large-3 columns sidebar">
+<aside class="large-3 columns sidebar hide-for-small">
 	<div class="row socialicons">
 		<div class="large-6 columns socialicon1">
 			<a href="https://www.facebook.com/groups/135987799795381/" title="Facebook">

@@ -279,17 +279,6 @@ function foundation_widgets() {
 			'after_title' => '</h5>',
 		) );
 
-	// Sidebar Footer Column Four
-	register_sidebar( array(
-			'id' => 'foundation_sidebar_footer_four',
-			'name' => __( 'Sidebar Footer Four', 'foundation' ),
-			'description' => __( 'This sidebar is located in column four of your theme footer.', 'foundation' ),
-			'before_widget' => '<div class="large-3 columns">',
-			'after_widget' => '</div>',
-			'before_title' => '<h5>',
-			'after_title' => '</h5>',
-		) );
-
 	}
 
 add_action( 'widgets_init', 'foundation_widgets' );

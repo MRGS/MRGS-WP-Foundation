@@ -26,6 +26,7 @@
 
 	<?php the_content(); ?>
 	
+	<div class="row"></div>
 	<hr>
 
 </article>

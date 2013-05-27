@@ -151,11 +151,8 @@ a:hover,a:focus {
 }
 
 .headertext {
-  /*font-family: 'Code Pro', sans-serif;*/
   color:#000;
   font-size: 8.3em;
-  display: block;
-  width: 100%;
 }
 
 

@@ -37,6 +37,7 @@ function foundation_shortcode_column( $atts, $content = null ) {
 	extract( shortcode_atts( array(
 		'center' => '',
 		'span' => '',
+		'lang' => '',
 		), $atts ) );
 
 	// Set the 'center' variable

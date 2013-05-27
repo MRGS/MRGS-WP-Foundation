@@ -32,7 +32,7 @@
 <!-- Lettering for header -->
 <script>
   $(document).ready(function() {
-    $("#header-title").lettering();
+	$("#header-title").lettering();
   });
 </script>
 <script>
@@ -54,11 +54,11 @@
 
 	<header class="site-header">
 		<div class="row show-for-small">
-		  <div class="small-4 small-centered columns">
-			  <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-			  	<img src="<?php echo get_stylesheet_directory_uri().'/img/mergsey.png'; ?>" alt="MRGS/SLMR">
-			  </a>
-		  </div>
+			<div class="small-4 small-centered columns">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+					<img src="<?php echo get_stylesheet_directory_uri().'/img/mergsey.png'; ?>" alt="MRGS/SLMR">
+				</a>
+			</div>
 		</div>
 		<div class="row hide-for-small">
 			<div class="large-8 columns">
