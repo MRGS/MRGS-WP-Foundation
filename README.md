@@ -1,3 +1,11 @@
+#MRGS-WP-Foundation
+
+A modification of https://github.com/drewsymo/Foundation -- this is a Wordpress theme for http://mrgs.ca
+
+(Original readme follows.)
+
+------
+
 # Foundation, for WordPress 4.0
 
 Foundation, for WordPress, is a blank starter theme built on [ZURB's Foundation Framework](http://foundation.zurb.com/) v4.
